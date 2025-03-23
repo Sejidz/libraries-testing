@@ -1,7 +1,7 @@
 @echo off
 
 :: Set the directory to the specified path
-cd /d "C:\Users\Sejid\Documents\energibridge-v0.0.7-x86_64-pc-windows-msvc"
+cd /d "C:\Users\Bulut\Documents\GitHub\libraries-testing\Pd"
 
 
 :: Start the rapl service
