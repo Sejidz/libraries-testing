@@ -4,7 +4,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 
 # Load the dataset
-df = pd.read_csv('synthetic_dataset.csv')
+df = pd.read_csv('ml/synthetic_dataset.csv')
 X = df.drop(columns=['target']).values
 y = df['target'].values
 

@@ -5,7 +5,7 @@ import torch.optim as optim
 from sklearn.model_selection import train_test_split
 
 # Load dataset
-df = pd.read_csv('synthetic_dataset.csv')
+df = pd.read_csv('ml/synthetic_dataset.csv')
 X = df.drop(columns=['target']).values
 y = df['target'].values
 
