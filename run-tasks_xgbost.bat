@@ -6,7 +6,7 @@ cd /d "C:\Users\Bulut\Documents\GitHub\libraries-testing"
 :: Activate the virtual environment
 call myenv\Scripts\activate
 
-cd /d "ml"
+::cd /d "ml"
 
 :: Start the rapl service
 sc start rapl

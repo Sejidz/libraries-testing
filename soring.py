@@ -17,6 +17,15 @@ def pandas_sort(arr):
     import pandas as pd
     return pd.Series(arr).sort_values().values
 
+def pytorch_sort(arr):
+    import torch
+    return torch.sort(torch.tensor(arr)).values.numpy()
+
+def tensorflow_sort(arr):
+    import tensorflow as tf
+    return tf.sort(arr).numpy()
+
+
 #def tensorflow_sort(arr):
 #    import tensorflow as tf
 #    return tf.sort(arr)
@@ -35,7 +44,7 @@ def pandas_sort(arr):
 #    sorted_dask_arr = dask_arr.sort()
 #    return sorted_dask_arr.compute()
 
-list_sorted = builtin_sort(list)
+list_sorted = tensorflow_sort(list)
 
 #get informationa bout a list
 print("The length of the list is: ", len(list_sorted))
@@ -44,8 +53,8 @@ print("The last element of the list is: ", list_sorted[-1])
 
 
 # Save the list
-with open("my_list.txt", "w") as f:
-    f.write("\n".join(map(str, list_sorted)))
+#with open("my_list.txt", "w") as f:
+#    f.write("\n".join(map(str, list_sorted)))
 
 
 
