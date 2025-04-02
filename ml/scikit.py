@@ -4,7 +4,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score
 
 # Load dataset
-df = pd.read_csv('ml/synthetic_dataset.csv')
+df = pd.read_csv('synthetic_dataset.csv')
 X = df.drop(columns=['target']).values
 y = df['target'].values
 
@@ -13,7 +13,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 
 def train_model(X_train, X_test, y_train, y_test):
     # Use pure logistic regression with no penalty and 100 iterations
-    model = LogisticRegression(max_iter=100, penalty='none', solver='lbfgs')
+    model = LogisticRegression(max_iter=100, penalty='l2', C=1e10, solver='lbfgs')
     model.fit(X_train, y_train)
     
     # Evaluate
