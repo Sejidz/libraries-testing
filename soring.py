@@ -2,7 +2,7 @@ import random
 
 random.seed(42)
 
-# Generate a list of 10 million random numbers between 1 and 100
+# Generate a list of 10 million random numbers between 1 and 10 000 000
 list = [random.randint(1, 100_000_000) for _ in range(10_000_000)]
 
 #built in

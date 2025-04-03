@@ -16,7 +16,7 @@ def summary(data):
     return sum_difference
 
 # Directory where the CSV files are located
-dr = r"C:\Users\Bulut\Documents\GitHub\libraries-testing\ml\xgbost"
+dr = r"C:\Users\Sejid\Documents\libraries-testing\ml\xgbost"
 
 # List to store the results for each file
 results = []
